@@ -36,6 +36,16 @@ python setup.py develop
 
 # Data Preparation  
 You shoud download the KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
+OpenPCDet
+├── data
+│   ├── kitti
+│   │   │── ImageSets
+│   │   │── training
+│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes) & (optional: depth_2)
+│   │   │── testing
+│   │   │   ├──calib & velodyne & image_2
+├── pcdet
+├── tools
 
 # Training and Testing  
 python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})  
