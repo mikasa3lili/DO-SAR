@@ -72,11 +72,12 @@ Waymo:
 `│   │   │── waymo_processed_data_v0_5_0_waymo_dbinfos_train_sampled_1_multiframe_-4_to_0.pkl (new, for single/multi-frame)`  
 `│   │   │── waymo_processed_data_v0_5_0_gt_database_train_sampled_1_multiframe_-4_to_0_global.np  (new, for single/multi-frame)`  
 # Training and Testing  
-python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})  
-python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}  
+`cd tools`  
+`python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})`  
+`python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}`  
 
 train with multiple gpus:  
-sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}  
+`sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}`  
 
 # Acknowledgement
 Our project is developed based on [SASA](https://github.com/blakechen97/SASA). Thanks for this excellence work!
