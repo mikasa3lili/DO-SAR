@@ -18,8 +18,8 @@ Cuda 11.0
 
 # Installation
 a. Clone this repository:   
-git clone https://github.com/mikasa3lili/DO-SAR  
-cd DO-SAR  
+$git clone https://github.com/mikasa3lili/DO-SAR$  
+$cd DO-SAR$  
 
 b. Install spconv v1.2.1:  
 git clone https://github.com/traveller59/spconv.git  
