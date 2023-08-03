@@ -36,7 +36,7 @@ c. Install pcdet toolbox:
 
 # Data Preparation  
 You shoud download the KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
-These datasets shold have the following organization：
+These datasets shold have the following organization:  
 KITTI:  
 `├── data`  
 `│   ├── kitti`  
