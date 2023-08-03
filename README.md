@@ -35,9 +35,9 @@ pip install -r requirements.txt
 python setup.py develop  
 
 # Data Preparation  
-You shoud download the  KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
+You shoud download the KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
 
-#Training and Testing  
+# Training and Testing  
 python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})  
 python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}  
 
