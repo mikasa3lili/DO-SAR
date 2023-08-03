@@ -71,7 +71,7 @@ Waymo:
 `|   |   |── waymo_processed_data_v0_5_0_gt_database_train_sampled_1_multiframe_-4_to_0 (new, for single/multi-frame)`  
 `│   │   │── waymo_processed_data_v0_5_0_waymo_dbinfos_train_sampled_1_multiframe_-4_to_0.pkl (new, for single/multi-frame)`  
 `│   │   │── waymo_processed_data_v0_5_0_gt_database_train_sampled_1_multiframe_-4_to_0_global.np  (new, for single/multi-frame)`  
-# Training and Testing  
+# Training and Testing   
 `cd tools`  
 `python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})`  
 `python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}`  
