@@ -17,32 +17,32 @@ Spconv v1.2.1
 Cuda 11.0  
 
 # Installation
-a. Clone this repository: 
-git clone https://github.com/mikasa3lili/DO-SAR
-cd DO-SAR
+a. Clone this repository:   
+git clone https://github.com/mikasa3lili/DO-SAR  
+cd DO-SAR  
 
-b. Install spconv v1.2.1:
-git clone https://github.com/traveller59/spconv.git
-cd spconv
-git checkout v1.2.1
-git submodule update --init --recursive
-python setup.py bdist_wheel
-pip install ./dist/spconv-1.2.1-cp36-cp36m-linux_x86_64.whl  
-cd ..
+b. Install spconv v1.2.1:  
+git clone https://github.com/traveller59/spconv.git  
+cd spconv  
+git checkout v1.2.1  
+git submodule update --init --recursive  
+python setup.py bdist_wheel  
+pip install ./dist/spconv-1.2.1-cp36-cp36m-linux_x86_64.whl    
+cd ..  
 
-c. Install pcdet toolbox:
-pip install -r requirements.txt
-python setup.py develop
+c. Install pcdet toolbox:  
+pip install -r requirements.txt  
+python setup.py develop  
 
-# Data Preparation
-You shoud download the  KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.
+# Data Preparation  
+You shoud download the  KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
 
-#Training and Testing
-python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})
-python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}
+#Training and Testing  
+python train.py --cfg_file ${CONFIG_FILE} (--ckpt ${CKPT})  
+python test.py --cfg_file ${CONFIG_FILE} --ckpt ${CKPT}  
 
-train with multiple gpus:
-sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}
+train with multiple gpus:  
+sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}  
 
 # Acknowledgement
 Our project is developed based on [SASA](https://github.com/blakechen97/SASA). Thanks for this excellence work!
