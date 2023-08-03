@@ -22,22 +22,22 @@ a. Clone this repository:
 `cd DO-SAR`  
 
 b. Install spconv v1.2.1:  
-git clone https://github.com/traveller59/spconv.git  
-cd spconv  
-git checkout v1.2.1  
-git submodule update --init --recursive  
-python setup.py bdist_wheel  
-pip install ./dist/spconv-1.2.1-cp36-cp36m-linux_x86_64.whl    
-cd ..  
+`git clone https://github.com/traveller59/spconv.git`  
+`cd spconv`  
+`git checkout v1.2.1`  
+`git submodule update --init --recursive`  
+`python setup.py bdist_wheel`  
+`pip install ./dist/spconv-1.2.1-cp36-cp36m-linux_x86_64.whl`    
+`cd ..`  
 
 c. Install pcdet toolbox:  
-pip install -r requirements.txt  
-python setup.py develop  
+`pip install -r requirements.txt`  
+`python setup.py develop`  
 
 # Data Preparation  
 You shoud download the KITTI, nuScenes, Waymo datasets, and follow the OpenPCDet(https://github.com/open-mmlab/OpenPCDet) to generate data infos.  
-OpenPCDet
-├── data
+`OpenPCDet`  
+`├── data`  
 │   ├── kitti
 │   │   │── ImageSets
 │   │   │── training
