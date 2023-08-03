@@ -54,6 +54,7 @@ nuScenes:
 `│   │   │   │── maps`  
 `│   │   │   │── v1.0-trainval`  
 Waymo:  
+`├── data`  
 `│   ├── waymo`  
 `│   │   │── ImageSets`  
 `│   │   │── raw_data`  
