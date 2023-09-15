@@ -77,4 +77,4 @@ train with multiple gpus:
 `sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}`  
 
 # Acknowledgement
-Our project is developed based on [SASA](https://github.com/blakechen97/SASA). Thanks for this excellence work!
+Our project is developed based on [SASA](https://github.com/blakechen97/SASA). Thanks for this excellent work!
